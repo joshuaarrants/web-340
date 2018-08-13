@@ -1,0 +1,8 @@
+{
+    "name": "routes",
+    "author": "Josh Arrants",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.3"
+    }
+}

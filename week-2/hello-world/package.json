@@ -1,0 +1,8 @@
+{
+    "name": "hello-world",
+    "author": "Josh Arrants",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.3"
+    }
+}

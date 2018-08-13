@@ -1,0 +1,9 @@
+{
+    "name": "express-viewexample",
+    "author": "Josh Arrants",
+    "private": true,
+    "dependencies": {
+        "ejs": "^2.6.1",
+        "express": "^4.16.3"
+    }
+}
