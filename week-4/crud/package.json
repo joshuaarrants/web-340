@@ -1,0 +1,8 @@
+{
+    "name": "crud",
+    "author": "Joshua Arrants",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.3"
+    }
+}
