@@ -1,0 +1,12 @@
+{
+    "name": "chai-example",
+    "author": "Joshua Arrants",
+    "private": true,
+    "dependencies": {
+        "chai": "^4.1.2",
+        "mocha": "^5.2.0"
+    },
+    "scripts": {
+        "test": "mocha"
+      }
+}
