@@ -4,6 +4,7 @@ var http = require("http");
 var path = require("path");
 var mongoose = require("mongoose");
 var logger = require("morgan");
+var helmet = require("helmet");
 var Employee = require("./models/employee");
 
 // mLab connection
@@ -31,9 +32,15 @@ db.once("open", function() {
 
 //application
 var app = express();
+
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
+
 app.use(logger("short"));
+app.use(helmet.xssFilter());
+
+
+
 
 // create a Employee model
 var employee = new Employee({
