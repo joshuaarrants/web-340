@@ -6,5 +6,30 @@
     <p></p>
 </div>
 
+<div class="container-fluid">
+<% if (employees.length) { %>
+    <table class="table table-hover table-bordered table-sm">
+        <caption>List of Employees</caption>
+        <thead class="thead-dark">
+        <tr>
+            <th scope ="col">Employee Name</th>
+            <th scope ="col">View Employee Record</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% employees.forEach(function (employee) { %>
+        <tr>
+            <td><%= employee.name %></td>
+            <td><a href="/view/<%= employee.name %>"><i class="fa fa-user"></i> VIEW</a></td>
+        </tr>
+        </tbody>
+        <% }) %>
+    </table>
+    <% } else { %>
+    No entries!
+    <% } %>
+    <a href="new" class="btn btn-outline-success float-right" role="button"><i class="fa fa-user-plus"></i> Add Employee</a>
+</div>
+
 <% include footer %>
 <% include scripts %>
